@@ -75,3 +75,124 @@
     left: 30px;
     top: -4px;
   }
+
+  .eye {
+    position: relative;
+    height: 44px;
+    width: 40px;
+    border-radius: 50%;
+    background: white;
+    border: 3px solid black;
+    bottom: 188px;
+    left: 206px;
+    transform: rotate(4deg);
+    z-index: 0;
+  }
+
+  .eye::before {
+    content: "";
+    position: absolute;
+    height: 12px;
+    width: 10px;
+    border-radius: 50%;
+    background: black;
+    left: 14px;
+    top: 22px;
+    transform: rotate(16deg);
+  }
+
+  .eye::after {
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: 4px;
+    border-radius: 50%;
+    background: white;
+    left: 18px;
+    top: 24px;
+  }
+
+  .eye1 {
+    width: 40px;
+    height: 40px;
+    bottom: 224px;
+    left: 234px;
+    z-index: 10;
+  }
+
+  .eye1::before {
+    top: 12px;
+  }
+  
+  .eye1::after {
+    top: 14px;
+  }
+
+  .hair {
+    position: relative;
+    z-index: -2;
+    bottom: 252px;
+    left: 10px;
+    z-index: 100;
+  }
+
+  .hair>div:nth-child(1) {
+    position: absolute;
+    background: transparent;
+    height: 30px;
+    width: 100px;
+    border-top: 20px solid green;
+    border-radius: 50px 40px 0 0;
+    bottom: 40px;
+    left: 180px;
+    transform: rotate(30deg);
+  }
+
+  .hair>div:nth-child(2) {
+    position: absolute;
+    background: transparent;
+    height: 30px;
+    width: 100px;
+    border-top: 20px solid green;
+    border-radius: 50px 40px 0 0;
+    bottom: 40px;
+    left: 200px;
+    transform: rotate(70deg);
+  }
+  
+  .hair>div:nth-child(3) {
+    position: absolute;
+    background: transparent;
+    height: 30px;
+    width: 80px;
+    border-top: 20px solid green;
+    border-radius: 50px 40px 0 0;
+    bottom: 50px;
+    left: 220px;
+    transform: rotate(130deg);
+  }
+  
+  .hair>div:nth-child(4) {
+    position: absolute;
+    background: transparent;
+    height: 30px;
+    width: 100px;
+    border-top: 20px solid green;
+    border-radius: 50px 40px 0 0;
+    bottom: 20px;
+    left: 200px;
+    transform: rotate(20deg);
+  } 
+  
+  .hair>div:nth-child(5) {
+    position: absolute;
+    background: transparent;
+    height: 30px;
+    width: 50px;
+    border-top: 20px solid green;
+    border-radius: 50px 40px 0 0;
+    bottom: 20px;
+    left: 260px;
+    transform: rotate(10deg);
+  }
+  
