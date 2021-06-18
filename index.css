@@ -2,12 +2,263 @@
     position: absolute; 
     background: #f0f0f0;
     height: 500px;
-    width: 500px;
+    width: 600px;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
     box-shadow: 16px 16px 10px #d7d7d7;
     border-radius: 20px;
+    display: flex;
+  }
+  /* phineas css */
+
+  .phineas {
+
+  }
+
+  .phineasFace {
+    position: relative;
+    width: 0;
+	height: 0;
+	border-top: 75px solid transparent;
+	border-left: 150px solid #fce2c4;
+	border-bottom: 75px solid transparent;
+    transform: rotate(-35deg);
+    left: 100px;
+    top: 150px;
+  }
+
+  .phineasFace::before {
+    content: "";
+    position: absolute;
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    background-color: #ffa945;
+    top: -50px;
+    right: 130px;
+    border-left: none;
+    border-top: none;
+    z-index: 1;
+  } 
+
+  .phineasFace::after {
+    content: "";
+    position: absolute;
+    height: 0px;
+    width: 10px;
+    border: 4px solid #ffa945;
+    top: -29px;
+    right: 137px;
+    border-left: none;
+    border-top: none;
+    transform: rotate(-7deg);
+    z-index: 1;
+  } 
+
+  .line1 {
+    position: relative;
+    height: 0px;
+    width: 160px;
+    border: 2px solid #ffa945;
+    left: 72px;
+    top: 42px;
+    transform: rotate(-9deg);
+  }
+
+  .line2 {
+    position: relative;
+    height: 0px;
+    width: 160px;
+    border: 2px solid #ffa945;
+    left: 112px;
+    top: 98px;
+    transform: rotate(-61deg);
+  }
+  .line3 {
+    position: relative;
+    height: 0px;
+    width: 142px;
+    left: 45px;
+    top: 106px;
+    transform: rotate(55deg);
+    border-top: 4px solid #ffa945;
+  }
+
+  .phineasNose {
+    content: "";
+    position: absolute;
+    height: 24px;
+    width: 22px;
+    background: #fce2c4;
+    border-radius: 50%;
+    border: 4px solid #ffa945;
+    top: 242px;
+    left: 93px;
+    border-left: none;
+    border-top: none;
+    transform: rotate(90deg);
+  } 
+
+  .phineasMouth { 
+    width:0px;
+    height:0px;
+    /*background:red;*/
+    border-top:35px solid  #f0f0f0;
+    border-right:35px solid  #f0f0f0;
+    border-bottom:35px solid transparent;
+    /*border-left:35px solid black;*/
+    border-radius:50px 0px 0px 0px;
+    transform: rotate(-80deg);
+    position: relative;
+    left:2px;
+    top:250px ;
+    z-index:8;
+    transform: rotate(-90deg);
+  }
+
+  /* .phineasTeeth {
+    content: "";
+    position: absolute;
+    height: 5px;
+    width: 20px;
+    background-color: white;
+    border: 2px solid #ffa945;
+    transform: rotate(88deg);
+    right: 100px;
+    top: 50px;
+    z-index: -10;
+  } */
+
+
+  .phineasEye {
+    position: relative;
+    height: 60px;
+    width: 40px;
+    border-radius: 50%;
+    background: white;
+    border: 3px solid black;
+    top: 165px;
+    right: 90px;
+    transform: rotate(-90deg);
+    z-index: 10;
+  }
+
+  .phineasEye::before {
+    content: "";
+    position: absolute;
+    height: 22px;
+    width: 20px;
+    border-radius: 50%;
+    background: black;
+    left: 14px;
+    top: 20px;
+    transform: rotate(50deg);
+  }
+
+  .phineasEye::after {
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: 4px;
+    border-radius: 50%;
+    background: white;
+    left: 18px;
+    top: 24px;
+  }
+
+  .eye2 {
+    width: 60px;
+    height: 40px;
+    top: 165px;
+    right: 120px;
+    transform: rotate(-5deg);
+    z-index: -10;
+  }
+
+  .eye2::before {
+    top: 2px;
+  }
+  
+  .eye2::after {
+    top: 6px;
+    left: 25px;
+  }
+
+  .phineasHair {
+    position: relative;
+    z-index: -2;
+    bottom: 265px;
+    right: 490px;
+    z-index: 100;
+  }
+
+  .phineasHair>div:nth-child(1) {
+    position: absolute;
+    background: transparent;
+    height: 30px;
+    width: 95px;
+    border-top: 20px solid #963A26;
+    border-radius: 50px 40px 0 0;
+    bottom: 4px;
+    left: 218px;
+    transform: rotate(-60deg);
+  }
+
+  .phineasHair>div:nth-child(2) {
+    position: absolute;
+    background: transparent;
+    height: 30px;
+    width: 100px;
+    border-top: 20px solid #963A26;
+    border-radius: 50px 40px 0 0;
+    bottom: 4px;
+    left: 210px;
+    transform: rotate(-90deg);
+  }
+
+  .phineasHair>div:nth-child(3) {
+    position: absolute;
+    background: transparent;
+    height: 30px;
+    width: 80px;
+    border-top: 20px solid #963A26;
+    border-radius: 50px 40px 0 0;
+    bottom: 20px;
+    left: 220px;
+    transform: rotate(-90deg);
+  }
+
+  .phineasHair>div:nth-child(4) {
+    position: absolute;
+    background: transparent;
+    height: 30px;
+    width: 70px;
+    border-top: 20px solid #963A26;
+    border-radius: 50px 40px 0 0;
+    bottom: -10px;
+    left: 200px;
+    transform: rotate(-50deg);
+  } 
+  .phineasHair>div:nth-child(5) {
+    position: absolute;
+    background: transparent;
+    height: 30px;
+    width: 50px;
+    border-top: 20px solid #963A26;
+    border-radius: 50px 40px 0 0;
+    bottom: 10px;
+    left: 200px;
+    transform: rotate(10deg);
+  } 
+  
+
+
+
+  /* ferb css */
+
+  .ferb {
+margin-left: -70px;
   }
 
   .face {
