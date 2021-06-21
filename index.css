@@ -109,8 +109,8 @@
     border-left:3px solid #ffa945;
     border-radius:50px 0px 0px 0px;
     position: relative;
-    left:-7px;
-    top:270px ;
+    left:161px;
+    top:100px ;
     z-index:8;
     transform: rotate(-62deg);
   }
@@ -122,10 +122,10 @@
     border-right:2px solid #ffa945;
     background:white;
     position: relative;
-    top:271px;
-    left: -25px;
+    top:79px;
+    left: 169px;
     z-index:14;
-    transform: rotate(27deg);
+    transform: rotate(25deg);
   }
 
 
@@ -134,10 +134,10 @@
     height:10px;
     background:red;
     border-radius:10px 0px 0px 0px;
-    transform: rotate(-55deg);
+    transform: rotate(-65deg);
     position: relative;
-    left:-43px;
-    top:273px ;
+    left: 167px;
+    top:77px ;
     z-index:8;
     }
 
@@ -149,8 +149,8 @@
     border-radius: 50%;
     background: white;
     border: 3px solid black;
-    top: 165px;
-    right: 100px;
+    top: -30px;
+    left: 120px;
     transform: rotate(-90deg);
     z-index: 10;
   }
@@ -181,26 +181,28 @@
   .eye2 {
     width: 60px;
     height: 40px;
-    top: 165px;
-    right: 130px;
+    top: -100px;
+    right: 200px;
     transform: rotate(-5deg);
     z-index: -10;
   }
 
   .eye2::before {
-    top: 2px;
+    top: 7px;
+    left: 30px;
+    transform: rotate(-10deg);
   }
   
   .eye2::after {
-    top: 6px;
-    left: 25px;
+    top: 13px;
+    left: 40px;
   }
 
   .phineasHair {
     position: relative;
     z-index: -2;
-    bottom: 265px;
-    right: 510px;
+    bottom: 77px;
+    right: 180px;
     z-index: 100;
   }
 
@@ -269,7 +271,7 @@
   /* ferb css */
 
   .ferb {
-margin-left: -100px;
+
   }
 
   .face {
